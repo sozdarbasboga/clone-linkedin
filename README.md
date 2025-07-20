@@ -17,7 +17,7 @@ Tarayıcıda `http://localhost:8000` adresine gidin.
 ## Canlı Demo
 Projeyi canlı olarak buradan inceleyebilirsiniz:
 
-👉 [https://sozdarbasboga.github.io/linkedin-clone/](https://sozdarbasboga.github.io/linkedin-clone/)
+👉 [https://sozdarbasboga.github.io/clone-linkedin/login.html](https://sozdarbasboga.github.io/clone-linkedin/login.html)
 
 ---
 
