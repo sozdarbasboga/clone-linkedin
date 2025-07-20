@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Profil Klonu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <style>
+    body { background-color: #f3f2ef; }
+    .cover-photo { width: 100%; height: 180px; object-fit: cover; border-radius: 12px 12px 0 0; background: #b2d4ff; }
+    .profile-header-box { background: #fff; border-radius: 12px; margin-top: -80px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding-bottom: 1.5rem; }
+    .profile-img { width: 144px; height: 144px; object-fit: cover; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: absolute; left: 32px; top: -72px; background: #fff; }
+    .profile-main-info { margin-left: 180px; padding-top: 1rem; }
+    .profile-name { font-size: 2rem; font-weight: bold; }
+    .profile-title { font-size: 1.1rem; color: #666; }
+    .profile-location { font-size: 1rem; color: #888; }
+    .btn-connect { background: #0a66c2; color: #fff; border-radius: 24px; font-weight: bold; padding: 6px 24px; }
+    .btn-connect:hover { background: #004182; color: #fff; }
+    .section-card { background: #fff; border-radius: 10px; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .section-card .card-body { padding: 1.5rem; }
+    .badge { font-size: 14px; margin-right: 4px; margin-bottom: 4px; }
+    @media (max-width: 768px) {
+      .profile-header-box { margin-top: -60px; }
+      .profile-img { width: 96px; height: 96px; left: 16px; top: -48px; }
+      .profile-main-info { margin-left: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="padding-top: 0.2rem; padding-bottom: 0.2rem; background: #fff !important;">
+    <div class="container" style="max-width: 1140px;">
+      <a class="navbar-brand p-0" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="32" alt="LinkedIn"></a>
+      <form class="d-none d-md-flex align-items-center mx-2 flex-grow-1" style="max-width: 280px;">
+        <input class="form-control form-control-sm" type="search" placeholder="Arama yap" aria-label="Search" style="background:#eef3f8; border:0; font-size:14px;">
+      </form>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center" style="gap: 0.5rem;">
+        <li class="nav-item"><a class="nav-link px-2" href="index.html"><i class="fas fa-home fa-lg d-block text-center"></i><div style="font-size:11px;">Ana Sayfa</div></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fas fa-user-friends fa-lg d-block text-center"></i><div style="font-size:11px;">Ağım</div></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fas fa-briefcase fa-lg d-block text-center"></i><div style="font-size:11px;">İş İlanları</div></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fas fa-comment-dots fa-lg d-block text-center"></i><div style="font-size:11px;">Mesajlaşma</div></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fas fa-bell fa-lg d-block text-center"></i><div style="font-size:11px;">Bildirimler</div></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="profile.html"><img src="assets/sozdarbasboga.jpg" class="rounded-circle d-block mx-auto" width="24" height="24" alt="Ben"><div style="font-size:11px;">Ben</div></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="login.html"><i class="fas fa-sign-out-alt fa-lg d-block text-center"></i><div style="font-size:11px;">Çıkış</div></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container" style="margin-top:90px; max-width: 900px;">
+    <div class="position-relative">
+      <div class="cover-photo" style="background: linear-gradient(90deg,#70b5f9 0,#7f66ff 100%);"></div>
+      <div class="profile-header-box p-0 text-center" style="position: relative;">
+        <img src="assets/sozdarbasboga.jpg" class="profile-img mx-auto" alt="Profil" style="left: 50%; transform: translateX(-50%); position: absolute; top: -72px;">
+        <div style="padding-top: 90px;">
+          <div class="profile-name">Sözdar Başboğa</div>
+          <div class="profile-title">Yazılım Geliştirici</div>
+          <div class="profile-location">Bursa, Türkiye</div>
+          <button class="btn btn-connect mt-2">Bağlantı Ekle</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-8">
+        <div class="section-card mb-3">
+          <div class="card-body">
+            <h5>Hakkımda</h5>
+            <p>1 yıldır yazılım geliştirme alanında çalışıyorum.</p>
+          </div>
+        </div>
+        <div class="section-card mb-3">
+          <div class="card-body">
+            <h5>Deneyim</h5>
+            <ul>
+              <li><strong>Yazılım Geliştirici</strong></li>
+              <li><strong>Stajyer</strong> - XYZ Yazılım (2024 - 2025)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-card mb-3">
+          <div class="card-body">
+            <h5>Eğitim</h5>
+            <ul>
+              <li>Frontend Geliştirici (2024 - 2025)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section-card mb-3">
+          <div class="card-body">
+            <h6>Yetenekler</h6>
+            <span class="badge bg-primary">JavaScript</span>
+            <span class="badge bg-secondary">React</span>
+            <span class="badge bg-success">Node.js</span>
+            <span class="badge bg-info">HTML</span>
+            <span class="badge bg-warning text-dark">CSS</span>
+          </div>
+        </div>
+        <div class="section-card mb-3">
+          <div class="card-body">
+            <h6>İletişim</h6>
+            <p><strong>E-posta:</strong> szdr346346@example.com</p>
+            <p><strong>Telefon:</strong> 0555 555 55 55</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
